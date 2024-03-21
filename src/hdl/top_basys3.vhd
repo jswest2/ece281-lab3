@@ -106,7 +106,7 @@ architecture top_basys3_arch of top_basys3 is
             );
     end component clock_divider;
     signal w_clk : std_logic;
-    --constant k_clock_divs	: natural	:= 10;
+ 
 begin
 	-- PORT MAPS ----------------------------------------
     thunderbird_inst : thunderbird_fsm
@@ -124,7 +124,7 @@ begin
     );
     
     clkdiv_inst : clock_divider
-    generic map (k_DIV => 12500000) --value is speed of clock?
+    generic map (k_DIV => 12500000) 
     port map (
     
         i_clk => clk,

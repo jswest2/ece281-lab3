@@ -105,26 +105,16 @@ begin
 	-- CONCURRENT STATEMENTS --------------------------------------------------------
 	-- Next State Logic	
 	f_Qnext(2) <= (not f_Q(2) and not f_Q(1) and not f_Q(0) and i_left) or (f_Q(2) and not f_Q(1));
-	--not f_Q(1) and (
-	--(not f_Q(2) and not f_Q(0) and i_left) 
-	--or (f_Q(2) and not f_Q(0))
-	--or (f_Q(2) and f_Q(0))
-	--);
+	
 	
 	f_Qnext(1) <= (not f_Q(2) and not f_Q(1) and not f_Q(0) and i_left and i_right)
 	or (not f_Q(2) and not f_Q(1) and f_Q(0))
 	or (not f_Q(2) and f_Q(1) and not f_Q(0))
 	or (f_Q(2) and not f_Q(1) and f_Q(0));
 	
-	-- prelab logic that I submitted on Gradescope
-	-- was incorrect for this, potential future errors may start here
 	f_Qnext(0) <= (not f_Q(2) and not f_Q(1) and not f_Q(0) and i_right)
 	 or (not f_Q(2) and f_Q(1) and not f_Q(0))
 	 or (f_Q(2) and not f_Q(1) and not f_Q(0)); 
-	--not f_Q(0) and ((not f_Q(2) and not f_Q(1) and i_right)
-	--or (not f_Q(2) and f_Q(1))
-	--or (f_Q(2) and f_Q(1))
-	--);
 	
 	-- Output Logic
 	

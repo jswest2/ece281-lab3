@@ -83,7 +83,7 @@ begin
 	   i_reset => w_reset,
 	   i_left => w_left,
 	   i_right => w_right,
-	   o_lights_L(0) => w_lights_L(2), --originally ol(0) => wL(0)
+	   o_lights_L(0) => w_lights_L(2),
 	   o_lights_L(1) => w_lights_L(1),
 	   o_lights_L(2) => w_lights_L(0),
 	   o_lights_R(0) => w_lights_R(0),
