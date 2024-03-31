@@ -124,7 +124,7 @@ begin
     );
     
     clkdiv_inst : clock_divider
-    generic map (k_DIV => 12500000) 
+    generic map (k_DIV => 12500000) -- help from C3C Jack Rust
     port map (
     
         i_clk => clk,

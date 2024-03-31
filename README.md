@@ -28,6 +28,6 @@ If successful then GHDL will quietly exit with a `0` code.
 If any of the `assert` statements fail **with** `severity error` then GHDL will cease the simulation and exit with non-zero code; this will also cause the workflow to fail.
 
 ## Documentation
-None.
+C3C Jack Rust helped me find the constant to set my clock speed by explaining to me the reasoning he used to find the correct clock speed. (topbasys3.vhd, line 127)
 ## Wave Form
 
